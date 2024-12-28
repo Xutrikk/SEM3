@@ -1,0 +1,80 @@
+05.12.2024 1:09:40
+Действие: HKVDiskInfo.getFreeDrivesSpace()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+05.12.2024 1:09:40
+Действие: HKVFileInfo.WriteFileInfo()
+Имя файла: HKVLogfile.txt
+Путь к файлу: C:\BSTU\SEM3\OOP\lab12oop\lab12oop\HKVLogfile.txt
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+05.12.2024 1:09:40
+Действие: HKVDirInfo.WriteDirInfo()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+05.12.2024 1:09:40
+Действие: HKVFileManager.InspectDriver()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+05.12.2024 1:09:40
+Действие: HKVFileManager.CopyFiles()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+05.12.2024 1:09:40
+Действие:  HKVFileManager.CreateArchive()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 0:49:05
+Действие: HKVDiskInfo.getFreeDrivesSpace()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 0:49:05
+Действие: HKVFileInfo.WriteFileInfo()
+Имя файла: HKVLogfile.txt
+Путь к файлу: C:\BSTU\SEM3\OOP\lab12oop\lab12oop\HKVLogfile.txt
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 0:49:05
+Действие: HKVDirInfo.WriteDirInfo()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 0:49:05
+Действие: HKVFileManager.InspectDriver()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 0:49:05
+Действие: HKVFileManager.CopyFiles()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 0:49:05
+Действие:  HKVFileManager.CreateArchive()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 1:41:54
+Действие: HKVDiskInfo.getFreeDrivesSpace()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 1:41:54
+Действие: HKVFileInfo.WriteFileInfo()
+Имя файла: HKVLogfile.txt
+Путь к файлу: C:\BSTU\SEM3\OOP\lab12oop\lab12oop\HKVLogfile.txt
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 1:41:54
+Действие: HKVDirInfo.WriteDirInfo()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 1:41:54
+Действие: HKVFileManager.InspectDriver()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 1:41:54
+Действие: HKVFileManager.CopyFiles()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 1:41:54
+Действие:  HKVFileManager.CreateArchive()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 12:00:13
+Действие: HKVDiskInfo.getFreeDrivesSpace()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 12:00:13
+Действие: HKVFileInfo.WriteFileInfo()
+Имя файла: HKVLogfile.txt
+Путь к файлу: C:\BSTU\SEM3\OOP\lab12oop\lab12oop\HKVLogfile.txt
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 12:00:13
+Действие: HKVDirInfo.WriteDirInfo()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 12:00:13
+Действие: HKVFileManager.InspectDriver()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 12:00:13
+Действие: HKVFileManager.CopyFiles()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+10.12.2024 12:00:13
+Действие:  HKVFileManager.CreateArchive()
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
