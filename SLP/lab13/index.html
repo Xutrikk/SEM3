@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="lab13.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h2>Список дел</h2>
+    <input type="text" id="taskInput" placeholder="Введите название задачи">
+    <button id="addTaskButton" onclick="addTask()">Добавить</button>
+    <div class="filter-buttons">
+      <button onclick="filterTasks('all')">Показать все</button>
+      <button onclick="filterTasks('completed')">Показать выполненные</button>
+      <button onclick="filterTasks('notCompleted')">Показать не выполненные</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="lab13.js"></script>
+</body>
+</html>
