@@ -1,0 +1,16 @@
+Текст:без ошибки 
+Текст без ошибок 
+--— Аргументы —— 
+ -in: C:\BSTU\SEM3\KPO\SELab17\Debug\in.txt
+ -out: C:\BSTU\SEM3\KPO\SELab17\Debug\in.txt.out
+ -log: C:\BSTU\SEM3\KPO\SELab17\Debug\in.txt.log
+
+--— Протокол —— 
+14.12.2024 19:52:51 —— 
+--— Параметры —— 
+Количество символов: 577
+Строк: 37
+Пропущено: 22
+Ошибка в строке:	integerС…СѓР№ function fi(integer x,integer y)|
+Строка: 1 Позиция: 13
+Ошибка: -105:Неопределенная ошибка
