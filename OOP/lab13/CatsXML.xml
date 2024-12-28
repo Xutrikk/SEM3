@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cats>
+  <cat breed="siamese">
+    <name>Мурло</name>
+  </cat>
+  <cat breed="striped">
+    <name>Кошка</name>
+  </cat>
+  <cat breed="persian">
+    <name>Симка</name>
+  </cat>
+</Cats>
