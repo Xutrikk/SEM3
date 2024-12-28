@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация формы</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 2px 2px 12px #aaa;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .checkbox-container, .radio-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-container label, .radio-container label {
+            margin-right: 8px;
+        }
+        .radio-container {
+            justify-content: space-between;
+        }
+        .radio-container input {
+            margin-left: 5px;
+        }
+        button {
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .error {
+            border-color: red;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form id="validationForm">
+        <h3>Заполните форму:</h3>
+
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required>
+        <div class="error-message" id="surname-error"></div>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error-message" id="name-error"></div>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error-message" id="email-error"></div>
+
+        <label for="phone">Телефон (0xx)xxx-xx-xx:</label>
+        <input type="text" id="phone" name="phone" required>
+        <div class="error-message" id="phone-error"></div>
+
+        <label for="city">Город:</label>
+        <select id="city" name="city" required>
+            <option value="Минск">Минск</option>
+            <option value="Пинск">Пинск</option>
+            <option value="Глуск">Глуск</option>
+            <option value="Гомель">Гомель</option>
+            <option value="Брест">Брест</option>
+        </select>
+
+        <div class="checkbox-container">
+            <label for="university">Я учусь в БГТУ</label>
+            <input type="checkbox" id="university" name="university">
+        </div>
+
+        <div class="radio-container">
+            <label>На каком курсе Вы учитесь?</label>
+            <label><input type="radio" name="course" value="1" required> 1</label>
+            <label><input type="radio" name="course" value="2"> 2</label>
+            <label><input type="radio" name="course" value="3"> 3</label>
+            <label><input type="radio" name="course" value="4"> 4</label>
+        </div>
+
+        <label for="about">Расскажите о себе:</label>
+        <textarea id="about" name="about" rows="4" required></textarea>
+        <div class="error-message" id="about-error"></div>
+
+        <button type="submit">Проверить</button>
+    </form>
+    <script>
+        document.getElementById('validationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let isValid = true;
+
+            // Очистка сообщений об ошибках
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+            document.querySelectorAll('input, textarea').forEach(el => el.classList.remove('error'));
+
+            // Правила валидации
+            const namePattern = /^[a-zA-Zа-яА-Я]{1,20}$/;
+            const emailPattern = /^\w+@[a-zA-Z]{2,5}\.[a-zA-Z]{2,3}$/;
+            const phonePattern = /^\(\d{3}\)\d{3}-\d{2}-\d{2}$/;
+
+            // Фамилия
+            const surname = document.getElementById('surname');
+            if (!namePattern.test(surname.value)) {
+                isValid = false;
+                surname.classList.add('error');
+                document.getElementById('surname-error').textContent = 'Фамилия должна содержать только буквы и не более 20 символов.';
+            }
+
+            // Имя
+            const name = document.getElementById('name');
+            if (!namePattern.test(name.value)) {
+                isValid = false;
+                name.classList.add('error');
+                document.getElementById('name-error').textContent = 'Имя должно содержать только буквы и не более 20 символов.';
+            }
+
+            // E-mail
+            const email = document.getElementById('email');
+            if (!emailPattern.test(email.value)) {
+                isValid = false;
+                email.classList.add('error');
+                document.getElementById('email-error').textContent = 'Введите корректный e-mail.';
+            }
+
+            // Телефон
+            const phone = document.getElementById('phone');
+            if (!phonePattern.test(phone.value)) {
+                isValid = false;
+                phone.classList.add('error');
+                document.getElementById('phone-error').textContent = 'Введите телефон в формате (0xx)xxx-xx-xx.';
+            }
+
+            // Расскажите о себе
+            const about = document.getElementById('about');
+            if (about.value.length > 250) {
+                isValid = false;
+                about.classList.add('error');
+                document.getElementById('about-error').textContent = 'Текст не должен превышать 250 символов.';
+            }
+
+            // Город
+            const city = document.getElementById('city');
+
+            // Курс
+            const course = document.querySelector('input[name="course"]:checked');
+            if (!course) {
+                isValid = false;
+                alert('Выберите курс!');
+            }
+
+            // Университет
+            const university = document.getElementById('university');
+
+            // Проверка на Минск, 3 курс и БГТУ
+            if (city.value !== 'Минск' || course.value !== '3' || !university.checked) {
+                const confirmation = confirm('Вы уверены в своем ответе?');
+                if (!confirmation) {
+                    isValid = false;
+                }
+            }
+
+            // Успешная валидация
+            if (isValid) {
+                alert('Форма успешно отправлена!');
+                // Здесь можно отправить форму
+            }
+        });
+    </script>
+</body>
+</html>
